@@ -1,0 +1,102 @@
+.promo{
+    min-height: 650px;
+    padding: 23px 0 93px 0;
+    background: url("../img/bg/main.jpg") center (center/cover) no-repeat;
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 90px;
+    }
+    &__header{
+        font-weight: 700;
+        font-size: 42px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        line-height: 42px;
+    }
+    &__subheader{
+        margin-top: 17px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+
+    }
+    &__icons{
+        margin-top: 65px;
+        max-width: 425px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__icon{
+        max-width: 108px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 14px;
+        color: #FFFFFF;
+        img{
+            display: block;
+            margin: 0 auto;  
+            margin-bottom: 20px;
+        }
+    }
+    &__link{
+        margin-top: 18px;
+        font-weight: 500;
+        font-size: 16px;
+        color: #FFFFFF;
+        a{
+            color: #FFFFFF;
+            text-transform: uppercase;
+            text-decoration: underline;
+        }
+    }
+}
+@media (max-width: 1200px){
+    .promo{
+        &__wrapper{
+            align-items: center;
+        }
+    }
+}
+@media (max-width: 767px){
+    .promo{
+        min-height: 600px;
+        padding-bottom: 50px;
+        &__header{
+            font-size: 32px;
+        }
+        &__wrapper{
+            margin-top: 80px;
+        }
+        &__subheader{
+            font-size: 20px;
+        }
+        &__link{
+            font-size: 11px;
+        }
+    }
+}
+
+@media (max-width: 575px){
+    .promo{
+        min-height: 490px;
+        padding-bottom: 0;
+        &__wrapper{
+            margin-top: 35px;
+        }
+        &__header{
+            font-size: 25px;
+        }
+        &__subheader{
+            font-size: 13px;
+            margin-top: 0;
+        }
+        &__icon{
+            font-size: 11px;
+        }
+       
+    }
+}

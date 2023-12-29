@@ -1,0 +1,23 @@
+.consultation{
+    min-height: 680px;
+    padding: 100px 0 92px 0;
+    background: url("../img/bg/free.jpg") center (center/cover) no-repeat ;
+    &__dcr{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        color: #FFFFFF;
+    }
+}
+@media (max-width: 1200px){
+    .consultation{
+        &__dcr{
+            text-align: center;
+            
+        }
+
+    }
+}
+@media (max-width: 575px){
+
+}

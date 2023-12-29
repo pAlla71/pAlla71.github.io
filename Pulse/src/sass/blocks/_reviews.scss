@@ -1,0 +1,76 @@
+.reviews{
+    min-height: 920px;
+    padding-bottom: 49px;
+    &__list{
+        list-style-type: none;
+    }
+    &__item{
+        display: flex;
+    }
+    &__img{
+        margin: 0px 61px 110px 0;
+        max-width: 169px;
+
+    }
+    &__subtitle{
+        font-weight: 700;
+        font-size: 18px;
+        color: #0D0D0D;
+    }
+    &__achievement{
+        font-weight: 500;
+        font-size: 14px;
+        color: #646464;
+    }
+    &__wrapper{
+        margin-top: 52px;
+    }
+    &__descr{
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        color: #0D0D0D;
+    }
+}
+@media (max-width: 320px){
+
+       .reviews{
+            &__img{
+                &:nth-child(2){
+                    img{
+                        width: 300%;
+                    }
+                }
+                img{
+                    width: 280%;
+                    
+                }
+            }
+           
+            &__wrapper{
+                padding-left: 10px;
+            }
+            &__item{
+                margin-top: 30px;
+            }
+       }
+}
+@media (max-width: 576px){
+
+    .reviews{
+         &__img{
+             &:nth-child(2){
+                 img{
+                     width: 210%;
+                 }
+             }
+             img{
+                 width: 210%;
+                 
+             }
+         }
+         &__item{
+            margin-bottom: 25px;
+         }
+    }
+}
